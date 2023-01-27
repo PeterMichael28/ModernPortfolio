@@ -33,7 +33,7 @@ const Hero = ( props: Props ) => {
       </h2>
      <div className=''>
       <h2 className="text-center text-3xl lg:text-6xl font-semibold px-6">
-       <span className="text-[3rem]">{text}</span>
+       <span className="text-[1.8rem] md:text-[3rem]">{text}</span>
        <Cursor
         cursorColor="#f7ab0a"
         cursorBlinking={true}
