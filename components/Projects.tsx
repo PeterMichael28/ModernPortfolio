@@ -52,7 +52,7 @@ const Projects = (props: Props) => {
             img: netflix,
             title: 'Responsive Netflix clone App WebApp',
             desc: "Created with Nextjs, Typescript and TailwindCss. A fully responsive Netflix that allows you check for different Genre of movies to watch their trailers as well as add to list of favorites.  TMDB Rest Api was consumed to make this possible as well as Context Api to manage my states. Successfully deployed to Vercel",
-            live: ' https://netflix-clone28.vercel.app/',
+            live: 'https://netflix-clone28.vercel.app',
             source: 'https://github.com/PeterMichael28/Netflix'
         },
         {

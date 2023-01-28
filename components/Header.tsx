@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 import React from "react";
 import { SocialIcon } from "react-social-icons";
@@ -30,14 +31,16 @@ function Header({}: Props) {
 
     
     <SocialIcon
+        url="https://github.com/PeterMichael28"
      network="github"
      bgColor="transparent"
      fgColor="grey"
      style={{width:'50px', margin: '0', padding: '0'}}
-     className='cursor-pointer'
+     className='cursor-pointer hover:text-[]#f7ab0a/40 transition-all duration-300'
     />
 
     <SocialIcon
+    url=""
      network="twitter"
      bgColor="transparent"
      fgColor="grey"
@@ -46,6 +49,7 @@ function Header({}: Props) {
     />
 
     <SocialIcon
+    url=""
      network="facebook"
      bgColor="transparent"
      fgColor="grey"
@@ -54,6 +58,7 @@ function Header({}: Props) {
     />
 
     <SocialIcon
+    url="https://www.linkedin.com/in/michael-peter-41800a239"
      network="linkedin"
      bgColor="transparent"
      fgColor="grey"
@@ -77,6 +82,8 @@ function Header({}: Props) {
         
         transition={{duration:1.5}}
    >
+    <Link href='#contact'>
+
     <SocialIcon
      network="email"
      bgColor="transparent"
@@ -86,6 +93,8 @@ function Header({}: Props) {
     <p className="hidden md:inline text-sm text-gray-400">
      Get In Touch
     </p>
+    </Link>
+    
    </motion.div>
   </header>
  );
