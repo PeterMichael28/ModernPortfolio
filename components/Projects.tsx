@@ -2,14 +2,14 @@ import { motion } from 'framer-motion';
 import React from 'react'
 import Image from "next/image";
 import img1 from '../public/hero.png'
-import gym from '../public/project/logo.png'
-import eco from '../public/project/e-commerce.png'
-import plc from '../public/project/logo1.png'
-import inve from '../public/project/mikeInventory.png'
-import myInsure from '../public/project/myInsure.jpeg'
-import spaceApp from '../public/project/SpaceApp.png'
-import netflix from '../public/project/netflix.png'
-import recipe from '../public/project/Recipe.png'
+import gym from '../public/Logo2.png'
+import eco from '../public/e-commerce.png'
+import plc from '../public/logo1.png'
+import inve from '../public/mikeInventory.png'
+import myInsure from '../public/myInsure.jpeg'
+import spaceApp from '../public/SpaceApp.png'
+import netflix from '../public/netflix.png'
+import recipe from '../public/Recipe.png'
 import Link from 'next/link';
 
 type Props = {}
