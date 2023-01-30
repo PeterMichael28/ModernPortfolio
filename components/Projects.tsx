@@ -19,7 +19,7 @@ const Projects = (props: Props) => {
 
     const projects = [
         {
-            img: myInsure,
+            img: gym,
             title: 'A Phone Insurance Application',
             desc: "An insurance app that lets you subscribe to an insurance plan that covers any of your phone damages all year round Developed, tested and Deployed an insurance web application with Reactjs, Bootstrap, Firebase, Paystack API's and so on. Worked directly with firebase authentication, cloudstore database and firebase storage among others to make the app ready for clients' usage Integrated paystack payment into the app as a means of payment.",
             live: 'https://myinsure-9b6d0.web.app/',
@@ -27,7 +27,7 @@ const Projects = (props: Props) => {
 
         },
         {
-            img: inve,
+            img: gym,
             title: 'A FullStack inventory Application',
             desc: "An insurance app that lets you subscribe to an insurance plan that covers any of your phone damages all year round Developed, tested and Deployed an insurance web application with Reactjs, Bootstrap, Firebase, Paystack API's and so on. Worked directly with firebase authentication, cloudstore database and firebase storage among others to make the app ready for clients' usage Integrated paystack payment into the app as a means of payment.",
             live: 'https://inventory-frontend-xi.vercel.app/',
@@ -35,7 +35,7 @@ const Projects = (props: Props) => {
 
         },
         {
-            img: plc,
+            img: gym,
             title: 'Platform Lead Limited Official Website',
             desc: "Platform Lead Limited Official Website made with ReactJs, Tailwind Css, EmailJs and etc. A responsive multi-page website that tells more about the company and allows user to find out more about our programs and how we run them. It also allows user to reach out directly to the company through the contact us page with the help of EmailJs that was integrated into it",
             live: 'https://plitsolutions.com/',
@@ -104,7 +104,7 @@ const Projects = (props: Props) => {
                     transition={{ duration: 1 }}
                     viewport={{once: true}}
                     >
-                    <Image src={project.img} alt='logo' className='w-[170px] h-[170px]' />
+                    <Image src={project.img} alt='logo'  className='w-[170px] h-[170px]' />
 
                     </motion.div>
 
