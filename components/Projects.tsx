@@ -1,22 +1,21 @@
 import { motion } from 'framer-motion';
 import React from 'react'
 import Image from "next/image";
-import img1 from 'public/hero.png'
-import gym from 'public/Logo2.png'
-import eco from 'public/e-commerce.png'
-import plc from 'public/logo1.png'
-import inve from 'public/mikeInventory.png'
-import myInsure from 'public/myInsure.jpeg'
-import spaceApp from 'public/SpaceApp.png'
-import netflix from 'public/netflix.png'
-import recipe from 'public/Recipe.png'
+import img1 from '../public/hero.png'
+import gym from '../public/Logo2.png'
+import eco from '../public/e-commerce.png'
+import plc from '../public/logo1.png'
+import inve from '../public/mikeInventory.png'
+import myInsure from '../public/myInsure.jpeg'
+import spaceApp from '../public/SpaceApp.png'
+import netflix from '../public/netflix.png'
+import recipe from '../public/Recipe.png'
 import Link from 'next/link';
 
 
 type Props = {}
 
 const Projects = (props: Props) => {
-    // const projects = [2,4,4,4,,5,5,6,7,]
 
     const projects = [
         {
@@ -72,7 +71,7 @@ const Projects = (props: Props) => {
         },
         {
             img: spaceApp,
-            title: 'Space Multipage Website',
+            title: 'Space Multi-page Website',
             desc: "A Static Multiple page Space App where you can navigate through different locations available, the travel crews as well as the travel vehicles. THis project was created with HTML, CSS and Javascript. it gives user access to navigate through different pages that includes viewing the different destinations, the different crews and also different transportation technology in use. It is fully responsive on all screens",
             live: 'https://petermichael28.github.io/mynewprojects/',
             source: 'https://github.com/PeterMichael28/mynewprojects'

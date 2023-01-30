@@ -82,18 +82,22 @@ function Header({}: Props) {
         
         transition={{duration:1.5}}
    >
-    <Link href='#contact'>
-
+   
+ 
     <SocialIcon
      network="email"
+     url="#contact"
      bgColor="transparent"
      fgColor="grey"
      className='cursor-pointer'
     />
+  
     <p className="hidden md:inline text-sm text-gray-400">
+    <Link href='#contact'>
      Get In Touch
-    </p>
     </Link>
+    </p>
+   
     
    </motion.div>
   </header>

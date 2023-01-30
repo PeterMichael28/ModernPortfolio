@@ -26,6 +26,7 @@ const Hero = ( props: Props ) => {
      <Image
       src={img1}
       alt="image"
+      
       className="w-36 h-36 rounded-full object-cover mx-auto"
      />
       <h2 className="text-sm uppercase text-gray-500 tracking-[10px] md:tracking-[15px] font-semibold">
