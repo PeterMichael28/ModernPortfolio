@@ -1,15 +1,15 @@
 import { motion } from 'framer-motion';
 import React from 'react'
 import Image from "next/image";
-import img1 from '/public/hero.png'
-import gym from '/public/log.png'
-import eco from '/public/ecommerce.png'
-import plc from '/public/logoss.png'
-import inve from '/public/mikeinventory.png'
-import myInsure from '/public/myinsure.jpeg'
-import spaceApp from '/public/SpaceApp.png'
-import netflix from '/public/netflix.png'
-import recipe from '/public/Recipe.png'
+import img1 from '/hero.png'
+import gym from '/log.png'
+import eco from '/ecommerce.png'
+import plc from '/logoss.png'
+import inve from '/mikeinventory.png'
+import myInsure from '/myinsure.jpeg'
+import spaceApp from '/SpaceApp.png'
+import netflix from '/netflix.png'
+import recipe from '/Recipe.png'
 import Link from 'next/link';
 
 
@@ -104,7 +104,7 @@ const Projects = (props: Props) => {
                     transition={{ duration: 1 }}
                     viewport={{once: true}}
                     >
-                    <Image src={project.img} alt='logo'  className='w-[170px] h-[170px]' />
+                    <Image src={project.img} alt='logo' className='w-[170px] h-[170px]' />
 
                     </motion.div>
 

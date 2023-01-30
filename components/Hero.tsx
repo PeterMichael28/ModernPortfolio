@@ -2,7 +2,7 @@ import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import BackgroundCircles from './BackgroundCircles';
 import Image from "next/image";
-import img1 from '/public/dp2.jpg'
+import img1 from '/dp2.jpg'
 import Link from 'next/link';
 
 
