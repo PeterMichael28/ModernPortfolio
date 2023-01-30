@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import React from 'react'
 import Image from "next/image";
-import img1 from '../public/hero.png'
+import img1 from '/public/hero.png'
 
 
 

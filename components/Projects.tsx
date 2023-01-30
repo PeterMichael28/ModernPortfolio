@@ -1,15 +1,15 @@
 import { motion } from 'framer-motion';
 import React from 'react'
 import Image from "next/image";
-import img1 from '../public/hero.png'
-import gym from '../public/Logo2.png'
-import eco from '../public/e-commerce.png'
-import plc from '../public/logo1.png'
-import inve from '../public/mikeInventory.png'
-import myInsure from '../public/myInsure.jpeg'
-import spaceApp from '../public/SpaceApp.png'
-import netflix from '../public/netflix.png'
-import recipe from '../public/Recipe.png'
+import img1 from '/public/hero.png'
+import gym from '/public/Logo2.png'
+import eco from '/public/e-commerce.png'
+import plc from '/public/logo1.png'
+import inve from '/public/mikeInventory.png'
+import myInsure from '/public/myInsure.jpeg'
+import spaceApp from '/public/SpaceApp.png'
+import netflix from '/public/netflix.png'
+import recipe from '/public/Recipe.png'
 import Link from 'next/link';
 
 
