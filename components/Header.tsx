@@ -36,7 +36,7 @@ function Header({}: Props) {
      bgColor="transparent"
      fgColor="grey"
      style={{width:'50px', margin: '0', padding: '0'}}
-     className='cursor-pointer hover:text-[]#f7ab0a/40 transition-all duration-300'
+     className='cursor-pointer hover:text-[#f7ab0a]/40 transition-all duration-300'
     />
 
     <SocialIcon
