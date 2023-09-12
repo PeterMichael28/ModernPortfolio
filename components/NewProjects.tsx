@@ -10,15 +10,17 @@ import myInsure from "../assets/myinsure.jpeg";
 import dezzy from "../assets/project/dezzy.png";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { motion } from 'framer-motion';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import 'swiper/css/navigation';
 // import required modules
 import {
  EffectCoverflow,
- Pagination,
+  Pagination,
+ Navigation
 } from "swiper/modules";
 
 type Props = {};
@@ -89,10 +91,10 @@ const NewProjects = (props: Props) => {
  return (
   <section
    id="NewProjects"
-   className="snap-center min-h-screen "
+   className="snap-center min-h-screen max-sm:pb-14"
   >
-   <div className="flex flex-col relative h-screen text-left xl:flex-row max-w-full justify-center mx-auto items-center z-0 overflow-x-hidden">
-    <h3 className="absolute top-16 font-semibold uppercase tracking-[10px] text-gray-500 text-xl">
+   <div className="flex flex-col relative h-screen text-left xl:flex-row max-w-full justify-center mx-auto items-center z-0 overflow-x-hidden max-sm:pt-8">
+    <h3 className="absolute top-[90px] md:top-16 font-semibold uppercase tracking-[7px] md:tracking-[10px] text-gray-500 md:text-xl text-center w-full max-sm:px-3">
      Selected NewProjects
     </h3>
 
@@ -107,28 +109,39 @@ const NewProjects = (props: Props) => {
       depth: 40,
       modifier: 1,
       slideShadows: true,
-     }}
-     pagination={true}
-     modules={[EffectCoverflow, Pagination]}
+         } }
+         navigation={true} 
+         pagination={{ clickable: true }}
+     modules={[EffectCoverflow, Pagination, Navigation]}
      className="w-full"
     >
      {projects.map((project, i) => (
       <SwiperSlide key={i}>
        <div
      
-        className="w-screen flex-shrink-0 snap-center flex flex-col space-y-1 items-center justify-center h-screen px-4 xs:px-7 py-16 md:p-20 md:px-44 md:py-12"
+        className="w-screen flex-shrink-0 snap-center flex flex-col gap-y-6 items-center justify-center h-screen px-6 xs:px-7 py-16 md:p-20 md:px-44 md:py-12"
        >
-        <div>
+           <motion.div
+             initial={{ opacity: 0, y:-100 }}
+             whileInView={{ opacity: 1, y:0 }}
+             transition={{ duration: 1 }}
+             viewport={{once: true}}
+           >
          <Image
           src={project.img}
           width={150}
           height={150}
           alt="logo"
-          className="w-[170px] h-[170px] object-contain"
+          className="w-[170px] h-[150px] object-contain"
          />
-        </div>
+        </motion.div>
 
-        <div className="space-y-3 px-0 md:px-10 max-w-5xl">
+           <motion.div
+             initial={ { opacity: 0, y: 100 } }
+              whileInView={{ opacity: 1, y:0 }}
+              transition={{ duration: 1 }}
+             viewport={ { once: true } }
+             className="space-y-3 px-0 md:px-10 max-w-5xl">
          <h4 className="text-3xl max-sm:text-2xl font-semibold text-center">
           <span className="underline decoration-[#f7ab0a]/50 text-[#f7ab0a]/50">
            Case Study {i + 1} of {projects.length}:
@@ -153,7 +166,7 @@ const NewProjects = (props: Props) => {
            Source
           </Link>
          </div>
-        </div>
+        </motion.div>
        </div>
       </SwiperSlide>
      ))}

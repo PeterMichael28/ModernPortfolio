@@ -15,16 +15,13 @@ type Props = {
 
 const ExperienceCard = ({images, lists, img, title, company, timeRange}: Props) => {
   return (
-    <article className='flex flex-col rounded-l items-center space-y-3 flex-shrink-0 w-[360px] md:w-[450px] snap-center bg-[#292929] px-6 md:px-2 py-4 md:py-2 md:pt-4 mt-20 md:mt-24 mb-3 opacity-70 hover:opacity-100 transition-opacity duration-500 cursor-pointer overflow-hidden rounded-md'>
-          <motion.div
-                  initial={ {opacity: 0, y:-100} }
-                  whileInView={ { opacity: 1, y:0 } }
-                  transition={ { duration: 1.5 } }
-                  viewport={{once: true}}
+    <article className='flex flex-col rounded-l items-center space-y-3 flex-shrink-0 w-[360px] md:w-[450px] h-full snap-center bg-[#292929] px-6 md:px-2 py-4 md:py-2 md:pt-4 mt-20 md:mt-24 mb-3 opacity-70 hover:opacity-100 transition-opacity duration-500 cursor-pointer overflow-hidden rounded-md'>
+          <div
+            
           >
               
           <Image src={img} alt='experience logo' className='w-20 h-20 rounded-full lg:w-20 lg:h-20 object-center' />
-        </motion.div>
+        </div>
 
         <div className='px-0 md:px-10'>
             <h4 className='text-xl'>{title}</h4>

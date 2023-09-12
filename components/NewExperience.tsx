@@ -22,10 +22,24 @@ import sh from "../assets/sidehustle.png";
 import firebase from "../assets/firebase.png";
 import jp from "../assets/jp.png";
 import plc from "../assets/logo.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import 'swiper/css/navigation';
+// import required modules
+import {
+ EffectCoverflow,
+  Pagination,
+ Navigation
+} from "swiper/modules";
+
 
 type Props = {};
 
-function Experience({}: Props) {
+function NewExperience({}: Props) {
  const experienceData = [
   {
    images: [html, css, js, bootstrap],
@@ -94,11 +108,25 @@ function Experience({}: Props) {
      Experience
     </h3>
 
-    <div className="text-left mt-5 w-full flex space-x-8 overflow-x-scroll snap-x snap-mandatory px-10  scrollbar-track-gray-400/40 scrollbar-thumb-[#f7ab0a]/70 scrollbar-thin  items-stretch">
-     {/* experience cards */}
-
-     {experienceData.reverse().map((experience, i) => (
-      <ExperienceCard
+    <Swiper
+     grabCursor={true}
+     centeredSlides={true}
+     slidesPerView={3}
+     coverflowEffect={{
+      rotate: 50,
+      stretch: 0,
+      depth: 40,
+      modifier: 1,
+      slideShadows: true,
+         } }
+         navigation={true} 
+         pagination={{ clickable: true }}
+     modules={[EffectCoverflow, Pagination, Navigation]}
+     className="w-full"
+    >
+     {experienceData.map((experience, i) => (
+      <SwiperSlide key={i}>
+       <ExperienceCard
        key={i}
        images={experience.images}
        lists={experience.lists}
@@ -107,15 +135,12 @@ function Experience({}: Props) {
        company={experience.company}
        timeRange={experience.timeRange}
       />
+      </SwiperSlide>
      ))}
-     {/* <ExperienceCard />
-                 
-                  <ExperienceCard />
-                  <ExperienceCard /> */}
-    </div>
+    </Swiper>
    </div>
   </motion.section>
  );
 }
 
-export default Experience
+export default NewExperience
