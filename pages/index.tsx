@@ -7,6 +7,7 @@ import About from '@/components/About';
 import Experience from '@/components/Experience';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
+import NewProjects from '@/components/NewProjects';
 import Contact from '@/components/Contact';
 
 
@@ -31,7 +32,7 @@ export default function Home() {
         {/* Skills */ }
         <Skills />
         {/* Projects */ }
-        <Projects />
+        <NewProjects />
         {/* Contact Me */}
         <Contact />
       </main>
