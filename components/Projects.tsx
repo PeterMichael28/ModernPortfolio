@@ -8,7 +8,7 @@ import eco from '../assets/ecommerce.png'
 import plc from '../assets/logoss.png'
 import inve from '../assets/mikeinventory.png'
 import myInsure from '../assets/myinsure.jpeg'
-import dezzy from '../assets/dezzy.png'
+import dezzy from '../assets/project/dezzy.png'
 import Link from 'next/link';
 
 
