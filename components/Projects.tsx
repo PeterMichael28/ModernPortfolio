@@ -8,6 +8,7 @@ import eco from '../assets/ecommerce.png'
 import plc from '../assets/logoss.png'
 import inve from '../assets/mikeinventory.png'
 import myInsure from '../assets/myinsure.jpeg'
+import dezzy from '../assets/dezzy.png'
 import Link from 'next/link';
 
 
@@ -40,6 +41,13 @@ const Projects = (props: Props) => {
             live: 'https://myinsure-9b6d0.web.app/',
             source: '#',
 
+        },
+        {
+            img: dezzy,
+            title: 'A BrandTech Portfolio',
+            desc: "BrandTech Company for all Businesses, Experience a fusion of technology and branding with our all-encompassing brandtech solutions, reshaping audience connections.",
+            live: 'https://dezzyworld.com',
+            source: '#',
         },
         {
             img: inve,
