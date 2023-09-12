@@ -10,7 +10,7 @@ import myInsure from "../assets/myinsure.jpeg";
 import dezzy from "../assets/project/dezzy.png";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { SwiperOptions } from 'swiper/types';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -97,10 +97,10 @@ const NewProjects = (props: Props) => {
     </h3>
 
     <Swiper
-     effect={"coverflow"}
+     effect="coverflow"
      grabCursor={true}
      centeredSlides={true}
-     slidesPerView={"auto"}
+     slidesPerView="auto"
      coverflowEffect={{
       rotate: 50,
       stretch: 0,
